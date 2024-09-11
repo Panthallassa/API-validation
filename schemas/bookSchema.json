@@ -1,0 +1,27 @@
+{
+	"type": "object",
+	"properties": {
+		"isbn": {
+			"type": "string",
+			"minLength": 10,
+			"maxLength": 13
+		},
+		"title": { "type": "string", "minLength": 1 },
+		"author": { "type": "string", "minLength": 1 },
+		"year": {
+			"type": "integer",
+			"minimum": 1000,
+			"maximum": 2024
+		},
+		"publisher": { "type": "string", "minLength": 1 },
+		"pages": { "type": "integer", "minimum": 1 }
+	},
+	"required": [
+		"isbn",
+		"title",
+		"author",
+		"year",
+		"publisher"
+	],
+	"additionalProperties": false
+}
